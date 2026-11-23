@@ -83,8 +83,6 @@ flowchart LR
     API <--> DB[("PostgreSQL<br/>samples · nodes<br/>heartbeats · incidents")]
     Evaluator["Incident evaluator<br/>every 2 s"] <--> DB
     Dashboard["React dashboard<br/>(Nginx, same-origin proxy)"] -->|query APIs| API
-    Scripts["Python demo, tests<br/>and benchmarks"] -.->|traffic · faults · checks| App
-    Scripts -.-> API
 ```
 
 | Component | Code | Role |
